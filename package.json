@@ -1,0 +1,17 @@
+{
+  "name": "campaign-amplification",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Campaign Amplification Platform monorepo (mobile + api + shared)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start -w mobile",
+    "check:lockfile": "node scripts/check-lockfile.cjs",
+    "typecheck": "npm run typecheck -w @campaign/shared && npm run typecheck -w mobile",
+    "lint": "npm run lint -w mobile",
+    "test": "npm run test -w @campaign/shared && npm run test -w mobile"
+  }
+}

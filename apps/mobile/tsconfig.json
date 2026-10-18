@@ -1,0 +1,22 @@
+{
+  "extends": "expo/tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@app/*": [
+        "./src/*"
+      ],
+      "@campaign/shared": [
+        "../../packages/shared/src/index.ts"
+      ],
+      "@campaign/shared/*": [
+        "../../packages/shared/src/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "../../packages/shared/src/**/*.ts"
+  ]
+}

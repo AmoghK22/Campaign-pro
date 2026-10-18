@@ -1,0 +1,11 @@
+# Copy to .env for the API; never commit real credentials.
+NODE_ENV=development
+PORT=4000
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/campaign_amplification
+# Mobile app API base URL: use your computer's LAN IP for a physical Android device,
+# not localhost. Example: EXPO_PUBLIC_API_BASE_URL=http://192.168.1.10:4000
+EXPO_PUBLIC_API_BASE_URL=
+# Optional integrations intentionally omitted from the demo by default.
+AI_PROVIDER_API_KEY=
+PAYMENT_PROVIDER_SECRET=
+AD_NETWORK_SECRET=

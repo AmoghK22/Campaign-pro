@@ -1,0 +1,37 @@
+# dependencies
+node_modules/
+
+# env
+.env
+.env.local
+.env*.local
+
+# expo
+.expo/
+dist/
+dist-web/
+web-build/
+expo-env.d.ts
+*.tsbuildinfo
+
+# native build artifacts
+/ios
+/android
+.kotlin/
+
+# metro
+.metro-health-check*
+
+# logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# misc
+.DS_Store
+*.pem
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
